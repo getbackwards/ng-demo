@@ -1,3 +1,30 @@
-<h1>Welcome to {{ title }}!</h1>
+<div class="first-nav">
+  We're still working on this new-look site, so we'd recommend using our desktop site to get access to all of Trade Me's
+  features. Show more
+</div>
+<div class="affiliates">
+  <ul class="affiliates-list inline">
+    <li>Trade Me</li>
+    <li>LifeDirect</li>
+    <li>Trade Me Insurance</li>
+    <li>FindSomeone</li>
+    <li>Holiday Houses</li>
+    <li>MotorWeb</li>
+  </ul>
+</div>
 
-<router-outlet></router-outlet>
+<div class="heading">
+  <h1>Welcome to {{ title }}</h1>
+</div>
+
+
+<div class="login">
+  <form action="" id="form" (ngSubmit)="sConsole($event)">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+    <label class="pwl" for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <button type="submit">Log in</button>
+  </form>
+  <router-outlet></router-outlet>
+</div>
